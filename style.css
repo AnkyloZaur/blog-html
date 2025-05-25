@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: orange;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#posts-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.post {
+    background: #fff;
+    border: 2px solid orange;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(255,140,0,0.08);
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    animation: postFadeIn 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes postFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.post h2 {
+    margin-top: 0;
+    color: orange;
+}
+
+.date {
+    color: #ff9800;
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+.read-more {
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.read-more:hover {
+    background: #ff9800;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 140, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    animation: popupBgFade 0.4s;
+}
+
+@keyframes popupBgFade {
+    from { background: rgba(255, 140, 0, 0); }
+    to { background: rgba(255, 140, 0, 0.2); }
+}
+
+.popup-content {
+    background: #fff;
+    border: 3px solid orange;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(255,140,0,0.15);
+    opacity: 0;
+    transform: scale(0.92) translateY(40px);
+    animation: popupContentIn 0.45s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes popupContentIn {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 2rem;
+    color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.close-btn:hover {
+    color: #ff9800;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+}

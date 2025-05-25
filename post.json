@@ -1,0 +1,22 @@
+[
+  {
+    "title": "First Post: Welcome to My Blog!",
+    "date": "2025-05-25 11:30 AM",
+    "content": "This is the very first post on my new blog. Look at https://github.com/AnkyloZaur/blog-html for the source code. Available under the GPL-3.0 license."
+  },
+  {
+    "title": "Second Post: Features",
+    "date": "2025-05-25 11:35 AM",
+    "content": "In this post, I will describe the features of this blog template. It reads posts from a JSON file and displays them in a HTML popup."
+  },
+  {
+    "title": "Third Post: Customization",
+    "date": "2025-05-25 11:40 AM",
+    "content": "You can customize the blog by editing the CSS file. Feel free to change the styles to your liking. For example, you can change the background color or font size."
+  },
+  {
+    "title": "Fourth Post: Future Plans",
+    "date": "2025-05-25 11:45 AM",
+    "content": "I plan to add more features in the future. Stay tuned!"
+  }
+]
